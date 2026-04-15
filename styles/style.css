@@ -1,0 +1,856 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+}
+
+.cabecalho {
+    background-color: #c40000;
+    color: white;
+
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 65px;
+}
+
+.options {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.itemNav {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.containerPrincipal {
+    background-color: rgb(226, 226, 226);
+    width: 80%;
+    max-width: 950px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.containerPrincipal h1 {
+    margin-bottom: 20px;
+}
+
+.containerPrincipal>p {
+    line-height: 1.6;
+    margin-bottom: 14px;
+    text-indent: 30px;
+    font-size: 18.5px;
+    font-weight: 450;
+    text-align: justify;
+}
+
+#fotoMV {
+    float: right;
+    width: 300px;
+    height: 300px;
+    margin-left: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.containerBotao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.botao {
+    background-color: #c40000;
+    color: white;
+    text-decoration: none;
+    padding: 16px 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.botao:hover {
+    background-color: #a00000;
+    transform: scale(1.05);
+}
+
+.layout {
+    display: flex;
+    width: 90%;
+    margin: 40px auto;
+    gap: 0;
+    align-items: stretch;
+    min-height: 500px;
+    justify-content: center;
+}
+
+.sidebar {
+    width: 220px;
+    background-color: #c40000;
+    color: white;
+    border-radius: 20px 0 0 20px;
+}
+
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.sidebar li {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sidebar li:hover {
+    background-color: #a00000;
+}
+
+#containerCurriculo {
+    margin-left: 0;
+    flex: 1;
+    margin: 0;
+    flex: 1;
+    border-radius: 0 20px 20px 0;
+    padding: 0 20px 20px 20px;
+}
+
+.secao {
+    display: none;
+}
+
+.ativa {
+    display: block;
+}
+
+.conteudoCurriculo {
+    font-size: 18.5px;
+    font-weight: 450;
+}
+
+.formacaoTitulo {
+    font-size: 20px;
+    font-weight: bold;
+    list-style: disc;
+}
+
+.formacaoConclusao {
+    font-size: 17px;
+    font-style: italic;
+}
+
+.formacaoTitulo::before {
+    content: "➜ ";
+    font-weight: bold;
+}
+
+.formacaoConclusao::before {
+    content: "◆ ";
+    margin-left: 15px;
+}
+
+.tituloHabilidade {
+    list-style: none;
+    font-weight: bold;
+}
+
+.blocoItem {
+    margin-top: 20px;
+    padding-left: 15px;
+    border-left: 4px solid #c40000;
+}
+
+.blocoItem h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.descricaoCargo {
+    margin: 5px 0;
+    color: #555;
+    font-size: 14px;
+}
+
+.blocoItem ul {
+    margin: 10px 0 0 20px;
+    padding: 0;
+}
+
+.blocoItem li {
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+.blocoItem:hover {
+    transform: translateX(5px);
+    transition: 0.3s;
+}
+
+.infoPessoal {
+    width: 350px;
+    margin-left: 20px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 12px;
+    height: fit-content;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.infoPessoal img {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.tituloPagina {
+    text-align: center;
+}
+
+.containerProjetos {
+    display: grid;
+    grid-column: 3;
+    gap: 20px;
+
+}
+
+.imgProjeto {
+    width: 100%;
+}
+
+.textoProjeto {
+    padding: 24px 0 16px 0;
+}
+
+.containerProjeto {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 15px;
+    margin: 50px;
+}
+
+.cardProjeto {
+    display: block;
+    text-decoration: none;
+    color: black;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    overflow: hidden;
+    border-radius: 20px;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.cardProjeto:hover {
+    transform: scale(1.05);
+}
+
+.cardProjeto img {
+    width: 100%;
+    display: block;
+}
+
+.infoProjeto {
+    padding: 15px;
+}
+
+.infoProjeto h2 {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #c40000;
+}
+
+.infoProjeto p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: 450;
+}
+
+.techs {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.techs span {
+    display: inline-block;
+    background-color: #c400007c;
+    color: #000000;
+    padding: 5px 10px;
+    margin: 3px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.cardNovidade {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.cardNovidade:hover {
+    transform: scale(1.02);
+}
+
+.cardNovidade h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.cardNovidade p {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.cardNovidade span {
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    color: gray;
+}
+
+#descricaoNovidade {
+    text-align: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+}
+
+.campo label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #000000;
+    font-size: 14px;
+    transition: 0.3s;
+    margin-top: 5px;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    border-color: #c40000;
+    outline: none;
+}
+
+.campo.checkbox {
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.campo.checkbox input {
+    width: auto;
+    margin: 0;
+}
+
+.botaoEnviar {
+    margin: 20px auto 0 auto;
+    padding: 16px 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #c40000;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+.botaoEnviar:hover {
+    background-color: #a00000;
+}
+
+#btnEnvio {
+    border: none;
+    margin-top: 15px;
+}
+
+#btnEmail {
+    background-color: #D44638;
+}
+
+#btnEmail:hover {
+    background-color: #812a22;
+}
+
+#btnZap {
+    background-color: #25D366;
+}
+
+#btnZap:hover {
+    background-color: #1b9749;
+}
+
+
+#btnInsta {
+    background: linear-gradient(-45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+#btnInsta:hover {
+    opacity: 0.85;
+}
+
+#btnLinkedin {
+    background-color: #0A66C2;
+}
+
+#btnLinkedin:hover {
+    background-color: #084a8b;
+}
+
+#btnGithub {
+    background-color: #24292F;
+}
+
+#btnGithub:hover {
+    background-color: #0e1013;
+}
+
+.blocoItem {
+    margin-bottom: 30px;
+}
+
+.tituloHabilidade {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.skill {
+    margin-bottom: 15px;
+}
+
+.tituloSkill {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.nivelTexto {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.barra {
+    display: flex;
+    gap: 4px;
+}
+
+.parte {
+    flex: 1;
+    height: 10px;
+    background: #ddd;
+    border-radius: 4px;
+}
+
+.parte.basico {
+    background: #c40000;
+}
+
+.parte.intermediario {
+    background: #f5a623;
+}
+
+.parte.avancado {
+    background: #25d366;
+}
+
+
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 0 30px;
+    }
+
+    .containerPrincipal {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .layout {
+        width: 95%;
+        gap: 0;
+    }
+
+    .sidebar {
+        width: 180px;
+    }
+
+    .infoPessoal {
+        width: 260px;
+    }
+
+    .infoPessoal img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .containerProjeto {
+        margin: 30px 20px;
+    }
+
+    #fotoMV {
+        width: 220px;
+        height: 220px;
+    }
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    position: absolute;
+    left: 20px;
+    z-index: 50;
+    line-height: 1;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.menu-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 260px;
+    background-color: #a00000;
+    z-index: 200;
+    list-style: none;
+    padding-top: 20px;
+    margin: 0;
+    border-radius: 0 15px 15px 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    box-shadow: 4px 0 20px rgba(0,0,0,0.3);
+}
+
+.menu-mobile.aberto {
+    transform: translateX(0);
+}
+
+.nome-menu-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    margin-bottom: 8px;
+}
+
+.nome-menu-mobile span {
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    text-align: center;
+}
+
+.menu-mobile li a {
+    display: block;
+    padding: 14px 24px;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.menu-mobile li a:hover {
+    background-color: rgba(255,255,255,0.15);
+    border-left: 3px solid white;
+    padding-left: 21px;
+}
+
+.footernavbar {
+    color: rgba(255,255,255,0.75);
+    font-size: 12px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    margin: 0;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 100;
+}
+
+.overlay.ativo {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        position: relative;
+        justify-content: center;
+        padding: 0 20px;
+        height: 56px;
+    }
+
+    .navbar h1 {
+        margin: 0;
+        font-size: 1.15rem;
+        text-align: center;
+    }
+
+    .options {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .containerPrincipal {
+        width: 92%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    #fotoMV {
+        float: none;
+        display: block;
+        margin: 0 auto 20px auto;
+        width: 200px;
+        height: 200px;
+    }
+
+    .containerPrincipal > p {
+        font-size: 16px;
+        text-indent: 20px;
+    }
+
+    .layout {
+        flex-direction: column;
+        width: 95%;
+        margin: 20px auto;
+        min-height: auto;
+    }
+
+    .sidebar {
+        width: 100%;
+        border-radius: 12px 12px 0 0;
+        order: -1;
+    }
+
+    .sidebar ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: auto;
+        padding: 8px;
+        gap: 4px;
+    }
+
+    .sidebar li {
+        flex: none;
+        padding: 8px 14px;
+        border-bottom: none;
+        border-radius: 8px;
+        font-size: 13px;
+        background-color: rgba(255,255,255,0.1);
+    }
+
+    .sidebar li:hover {
+        background-color: #a00000;
+    }
+
+    #containerCurriculo {
+        width: 100%;
+        border-radius: 0 0 12px 12px;
+        padding: 20px;
+    }
+
+    .infoPessoal {
+        width: 100%;
+        margin: 10px 0 0 0;
+        box-sizing: border-box;
+        border-radius: 12px;
+    }
+
+    .infoPessoal img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .containerProjeto {
+        grid-template-columns: 1fr;
+        margin: 20px 15px;
+    }
+
+    .cardProjeto {
+        width: 100%;
+    }
+
+    .containerBotao {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botao {
+        width: 100%;
+        max-width: 320px;
+        text-align: center;
+        padding: 14px 20px;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+
+    .formularioContato {
+        width: 100%;
+    }
+
+    .infoContato .containerBotao {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .infoContato .botao {
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+        padding: 13px 10px;
+        box-sizing: border-box;
+    }
+
+    .infoContato .containerBotao .botao:last-child {
+        grid-column: 1 / -1;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .cardNovidade {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .options {
+        gap: 6px;
+    }
+
+    .options li a {
+        font-size: 13px;
+    }
+
+    .containerPrincipal {
+        width: 96%;
+        padding: 15px;
+        margin: 12px auto;
+        border-radius: 12px;
+    }
+
+    .containerPrincipal > p {
+        font-size: 15px;
+        text-indent: 15px;
+    }
+
+    #fotoMV {
+        width: 160px;
+        height: 160px;
+    }
+
+    .sidebar li {
+        font-size: 12px;
+        padding: 7px 10px;
+    }
+
+    .infoProjeto p {
+        font-size: 15px;
+    }
+
+    .infoProjeto h2 {
+        font-size: 17px;
+    }
+
+    .techs {
+        flex-wrap: wrap;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .tituloPagina {
+        font-size: 1.4rem;
+    }
+
+    .botaoEnviar {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .infoContato .botao {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}

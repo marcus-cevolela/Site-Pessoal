@@ -1,0 +1,444 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcus Cevolela | Currículo</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/funcionalidadeSidebar.js"></script>
+    <script src="scripts/menu.js" defer></script>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <nav class="navbar">
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menu">☰</button>
+            <h1><a class="itemNav" href="index.html">Marcus Cevolela</a></h1>
+            <ul class="options">
+                <li><a class="itemNav" href="index.html">Home</a></li>
+                <li><a class="itemNav" href="sobreMim.html">Sobre Mim</a></li>
+                <li><a class="itemNav" href="projetos.html">Projetos</a></li>
+                <li><a class="itemNav" href="contato.html">Contato</a></li>
+                <li><a class="itemNav" href="novidades.html">Novidades</a></li>
+            </ul>
+        </nav>
+
+        <ul class="menu-mobile" id="menuMobile">
+            <div class="nome-menu-mobile">
+                <span>Marcus Cevolela</span>
+            </div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobreMim.html">Sobre Mim</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="novidades.html">Novidades</a></li>
+            <p class="footernavbar">© 2025 Marcus Cevolela</p>
+        </ul>
+
+        <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+    </header>
+
+    <div class="layout">
+
+        <aside class="sidebar">
+            <ul>
+                <li onclick="mostrarSecao('resumoProfissional')">Resumo Profissional</li>
+                <li onclick="mostrarSecao('formacaoAcademica')">Formação Acadêmica</li>
+                <li onclick="mostrarSecao('habilidadesTecnicas')">Habilidades Técnicas</li>
+                <li onclick="mostrarSecao('experiencia')">Experiência Prática e Projetos</li>
+                <li onclick="mostrarSecao('cursosComplementares')">Cursos Complementares</li>
+                <li onclick="mostrarSecao('informacoesAdicionais')">informações Adicionais</li>
+            </ul>
+        </aside>
+
+        <div class="containerPrincipal" id="containerCurriculo">
+            <article>
+                <div id="resumoProfissional" class="secao ativa">
+                    <h1 class="tituloCurriculo">Resumo Profissional</h1>
+                    <hr>
+                    <p class="conteudoCurriculo">Atualmente sou estudante de Ciência da Computação pela UVA, com foco em
+                        desenvolvimento web utilizando Next.js, HTML5, CSS3 e JavaScript, além de noções em Python e
+                        Flutter. Possuo experiência prática como freelancer em projetos web, com habilidades em design
+                        gráfico, edição de vídeos e criação de conteúdo digital. Participei de olimpíadas acadêmicas que
+                        reforçam competências como trabalho em equipe e resolução de problemas. Possuo inglês em nível
+                        avançado, com boa capacidade de comunicação oral e escrita.</p>
+                </div>
+                <div id="formacaoAcademica" class="secao">
+                    <h1 class="tituloCurriculo">Formação Acadêmica</h1>
+                    <hr>
+                    <p>
+                    <dl>
+                        <div class="blocoItem">
+                            <dt class="formacaoTitulo">Bacharelado em Ciência da Computação - Universidade Veiga de
+                                Almeida (UVA)</dt>
+                            <dd class="formacaoConclusao">Conclusão prevista: 2029</dd>
+                        </div>
+                        <br>
+                        <div class="blocoItem">
+                            <dt class="formacaoTitulo">Tecnólogo em Sistemas de Computação - Universidade Federal
+                                Fluminense (UFF)</dt>
+                            <dd class="formacaoConclusao">2 Semestres cursados</dd>
+                        </div>
+                        <br>
+                        <div class="blocoItem">
+                            <dt class="formacaoTitulo">Técnico em Automação Industrial - SENAI Nova Iguaçu</dt>
+                            <dd class="formacaoConclusao">Concluído em 2023</dd>
+                        </div>
+                        <br>
+                        <div class="blocoItem">
+                            <dt class="formacaoTitulo">Ensino Médio Completo - Escola SESI Nova Iguaçu</dt>
+                            <dd class="formacaoConclusao">Concluído em 2023</dd>
+                        </div>
+                    </dl>
+                    </p>
+                </div>
+                <div id="habilidadesTecnicas" class="secao">
+                    <h1 class="tituloCurriculo">Habilidades Técnicas</h1>
+                    <hr>
+
+                    <div class="blocoItem">
+                        <h3 class="tituloHabilidade">Linguagens</h3>
+
+                        <div class="skill">
+                            <div class="tituloSkill">
+                                <span>Python</span>
+                                <span class="nivelTexto">Avançado</span>
+                            </div>
+                            <div class="barra">
+                                <div class="parte avancado"></div>
+                                <div class="parte avancado"></div>
+                                <div class="parte avancado"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="tituloSkill">
+                                <span>JavaScript</span>
+                                <span class="nivelTexto">Avançado</span>
+                            </div>
+                            <div class="barra">
+                                <div class="parte avancado"></div>
+                                <div class="parte avancado"></div>
+                                <div class="parte avancado"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="tituloSkill">
+                                <span>HTML</span>
+                                <span class="nivelTexto">Avançado</span>
+                            </div>
+                            <div class="barra">
+                                <div class="parte avancado"></div>
+                                <div class="parte avancado"></div>
+                                <div class="parte avancado"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="tituloSkill">
+                                <span>CSS</span>
+                                <span class="nivelTexto">Avançado</span>
+                            </div>
+                            <div class="barra">
+                                <div class="parte avancado"></div>
+                                <div class="parte avancado"></div>
+                                <div class="parte avancado"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="tituloSkill">
+                                <span>Java</span>
+                                <span class="nivelTexto">Básico</span>
+                            </div>
+                            <div class="barra">
+                                <div class="parte basico"></div>
+                                <div class="parte"></div>
+                                <div class="parte"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blocoItem">
+                        <h3 class="tituloHabilidade">Frameworks & Ferramentas</h3>
+
+                        <div class="skill">
+                            <div class="tituloSkill">
+                                <span>Next.js</span>
+                                <span class="nivelTexto">Intermediário</span>
+                            </div>
+                            <div class="barra">
+                                <div class="parte intermediario"></div>
+                                <div class="parte intermediario"></div>
+                                <div class="parte"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="tituloSkill">
+                                <span>Bootstrap</span>
+                                <span class="nivelTexto">Intermediário</span>
+                            </div>
+                            <div class="barra">
+                                <div class="parte intermediario"></div>
+                                <div class="parte intermediario"></div>
+                                <div class="parte"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="tituloSkill">
+                                <span>Flutter</span>
+                                <span class="nivelTexto">Básico</span>
+                            </div>
+                            <div class="barra">
+                                <div class="parte basico"></div>
+                                <div class="parte"></div>
+                                <div class="parte"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="tituloSkill">
+                                <span>Git</span>
+                                <span class="nivelTexto">Intermediário</span>
+                            </div>
+                            <div class="barra">
+                                <div class="parte intermediario"></div>
+                                <div class="parte intermediario"></div>
+                                <div class="parte"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="tituloSkill">
+                                <span>TailwindCSS</span>
+                                <span class="nivelTexto">Intermediário</span>
+                            </div>
+                            <div class="barra">
+                                <div class="parte intermediario"></div>
+                                <div class="parte intermediario"></div>
+                                <div class="parte"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blocoItem">
+                        <h3 class="tituloHabilidade">Design & Multimídia</h3>
+
+                        <div class="skill">
+                            <div class="tituloSkill">
+                                <span>Photoshop</span>
+                                <span class="nivelTexto">Intermediário</span>
+                            </div>
+                            <div class="barra">
+                                <div class="parte intermediario"></div>
+                                <div class="parte intermediario"></div>
+                                <div class="parte"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="tituloSkill">
+                                <span>Illustrator</span>
+                                <span class="nivelTexto">Básico</span>
+                            </div>
+                            <div class="barra">
+                                <div class="parte basico"></div>
+                                <div class="parte"></div>
+                                <div class="parte"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="tituloSkill">
+                                <span>CorelDRAW</span>
+                                <span class="nivelTexto">Básico</span>
+                            </div>
+                            <div class="barra">
+                                <div class="parte basico"></div>
+                                <div class="parte"></div>
+                                <div class="parte"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="tituloSkill">
+                                <span>CapCut</span>
+                                <span class="nivelTexto">Intermediário</span>
+                            </div>
+                            <div class="barra">
+                                <div class="parte intermediario"></div>
+                                <div class="parte intermediario"></div>
+                                <div class="parte"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="tituloSkill">
+                                <span>Premiere</span>
+                                <span class="nivelTexto">Básico</span>
+                            </div>
+                            <div class="barra">
+                                <div class="parte basico"></div>
+                                <div class="parte"></div>
+                                <div class="parte"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blocoItem">
+                        <h3 class="tituloHabilidade">Idiomas</h3>
+
+                        <div class="skill">
+                            <div class="skillHeader">
+                                <span>Inglês</span>
+                                <span class="nivelTexto">Avançado</span>
+                            </div>
+                            <div class="barra">
+                                <div class="parte avancado"></div>
+                                <div class="parte avancado"></div>
+                                <div class="parte avancado"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skillHeader">
+                                <span>Espanhol</span>
+                                <span class="nivelTexto">Básico</span>
+                            </div>
+                            <div class="barra">
+                                <div class="parte basico"></div>
+                                <div class="parte"></div>
+                                <div class="parte"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="experiencia" class="secao">
+                    <h1 class="tituloCurriculo">Experiência Prática e Projetos</h1>
+                    <hr>
+
+                    <div class="blocoItem">
+                        <h3>Freelancer - Litteris Editora</h3>
+                        <p class="descricaoCargo">Landing page desenvolvida em Next.js para lançamento de livro
+                            (2024)</p>
+                        <ul>
+                            <li>Criação de site responsivo com HTML, Tailwind CSS e JavaScript</li>
+                            <li>Integração de design gráfico com experiência de usuário</li>
+                        </ul>
+                    </div>
+
+                    <div class="blocoItem">
+                        <h3>Social Media - Loja de Celulares</h3>
+                        <p class="descricaoCargo">Criação de conteúdo para Instagram e edição de vídeos (2022-2023)
+                        </p>
+                        <ul>
+                            <li>Uso de Photoshop, CapCut e Illustrator para criação de posts e reels</li>
+                        </ul>
+                    </div>
+
+                    <div class="blocoItem">
+                        <h3>Balconista e Caixa - Drogaria Guanabara da Prata</h3>
+                        <p class="descricaoCargo">Atendimento ao cliente presencial e online (2023-2025)</p>
+                    </div>
+                </div>
+                <div id="cursosComplementares" class="secao">
+                    <h1 class="tituloCurriculo">Cursos Complementares</h1>
+                    <hr>
+                    <p>
+                    <dl>
+                        <div class="blocoItem">
+                            <dt class="formacaoTitulo">Capacitação em Flutter - UFF</dt>
+                            <dd class="formacaoConclusao">Concluído em 2025</dd>
+                        </div>
+                        <br>
+                        <div class="blocoItem">
+                            <dt class="formacaoTitulo">Curso de HTML5 e CSS3 - Alura</dt>
+                            <dd class="formacaoConclusao">Concluído em 2023</dd>
+                        </div>
+                        <br>
+                        <div class="blocoItem">
+                            <dt class="formacaoTitulo"> Curso de JavaScript - Curso em Vídeo</dt>
+                            <dd class="formacaoConclusao">Concluído em 2023</dd>
+                        </div>
+                        <br>
+                        <div class="blocoItem">
+                            <dt class="formacaoTitulo">Curso de Bootstrap 5 - Alura</dt>
+                            <dd class="formacaoConclusao">Concluído em 2023</dd>
+                        </div>
+                        <br>
+                        <div class="blocoItem">
+                            <dt class="formacaoTitulo">Curso de Adobe Photoshop e Illustrator – Alura</dt>
+                            <dd class="formacaoConclusao">Concluído em 2023</dd>
+                        </div>
+                        <br>
+                        <div class="blocoItem">
+                            <dt class="formacaoTitulo">Empreendedorismo - SENAI</dt>
+                            <dd class="formacaoConclusao">Concluído em 2021</dd>
+                        </div>
+                        <br>
+                        <div class="blocoItem">
+                            <dt class="formacaoTitulo">Indústria 4.0 - SENAI</dt>
+                            <dd class="formacaoConclusao">Concluído em 2021</dd>
+                        </div>
+                    </dl>
+                    </p>
+                </div>
+                <div id="informacoesAdicionais" class="secao">
+                    <h1 class="tituloCurriculo">Informações Adicionais</h1>
+                    <hr>
+                    <p>
+                    <dl>
+                        <div class="blocoItem">
+                            <dt class="formacaoTitulo">Olimpíadas Acadêmicas</dt>
+                            <dd class="formacaoConclusao">Participação em eventos como OBA, ONHB-A, Canguru de
+                                Matemática e OBMEP que fortaleceram habilidades em raciocínio lógico, trabalho em
+                                equipe e organização.</dd>
+                        </div>
+                        <br>
+                        <div class="blocoItem">
+                            <dt class="formacaoTitulo">Hardware e Montagem de PCs</dt>
+                            <dd class="formacaoConclusao">Conhecimento prático em montagem, manutenção e
+                                configuração de computadores, adquirido de forma autodidata.</dd>
+                        </div>
+                        <br>
+                        <div class="blocoItem">
+                            <dt class="formacaoTitulo">Perfil Autodidata</dt>
+                            <dd class="formacaoConclusao"> Forte interesse por tecnologia desde cedo, sempre
+                                buscando aprender novas ferramentas e acompanhar inovações da área de TI.</dd>
+                        </div>
+                    </dl>
+                    </p>
+                </div>
+            </article>
+        </div>
+
+        <div class="infoPessoal">
+            <img src="assets/marcus.png" alt="Marcus Cevolela">
+
+            <p><strong>Marcus Vinícius Pereira Cevolela Correia</strong></p>
+            <p>📧: <a href="mailto:marcus.cevolela@gmail.com" target="_blank">marcus.cevolela@gmail.com</a></p>
+            <p>📞: <a href="https://wa.me//5521981213090" target="_blank">(21) 98121-3090</a></p>
+            <p>📍: Belford Roxo - RJ</p>
+            <p>🌐: <a href="https://www.linkedin.com/in/marcus-cevolela/"
+                    target="_blank">https://www.linkedin.com/in/marcus-cevolela/</a></p>
+            <p>🧑‍💻: <a href="https://github.com/Marcus-Vinicius-Cevolela"
+                    target="_blank">https://github.com/Marcus-Vinicius-Cevolela</a></p>
+
+            <div class="containerBotao">
+                <a href="projetos.html" class="botao">
+                    Veja meus <strong>projetos</strong> aqui!
+                </a>
+                <a href="contato.html" class="botao">
+                    Entre em <strong>contato</strong> comigo aqui!
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

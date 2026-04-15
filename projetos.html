@@ -1,0 +1,140 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcus Cevolela | Projetos</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/menu.js" defer></script>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <nav class="navbar">
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menu">☰</button>
+            <h1><a class="itemNav" href="index.html">Marcus Cevolela</a></h1>
+            <ul class="options">
+                <li><a class="itemNav" href="index.html">Home</a></li>
+                <li><a class="itemNav" href="sobreMim.html">Sobre Mim</a></li>
+                <li><a class="itemNav" href="projetos.html">Projetos</a></li>
+                <li><a class="itemNav" href="contato.html">Contato</a></li>
+                <li><a class="itemNav" href="novidades.html">Novidades</a></li>
+            </ul>
+        </nav>
+
+        <ul class="menu-mobile" id="menuMobile">
+            <div class="nome-menu-mobile">
+                <span>Marcus Cevolela</span>
+            </div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobreMim.html">Sobre Mim</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="novidades.html">Novidades</a></li>
+            <p class="footernavbar">© 2025 Marcus Cevolela</p>
+        </ul>
+
+        <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+    </header>
+
+    <h1 class="tituloPagina">Meus Projetos</h1>
+    <hr>
+
+    <div class="containerProjeto">
+        <a href="https://meu-portfolio-tan-nine.vercel.app" target="_blank" class="cardProjeto">
+            <img src="assets/projeto-1.png" alt="Projeto 1">
+
+            <div class="infoProjeto">
+                <h2>Portfólio Pessoal</h2>
+                <p>
+                    Este projeto foi desenvolvido com o objetivo de prática e aprimoramento das minhas habilidades em
+                    desenvolvimento web. A proposta foi criar um portfólio pessoal para treinar conceitos de HTML e CSS,
+                    além de me desafiar na organização de layout e estruturação de conteúdo. O projeto também serviu
+                    como base para evolução contínua e experimentação de novas técnicas de design e desenvolvimento.
+                </p>
+
+                <div class="techs">
+                    <span>Next.js</span>
+                    <span>Tailwind CSS</span>
+                    <span>Vercel</span>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://marciodejagun-marcus-vinicius-cevolelas-projects.vercel.app" target="_blank"
+            class="cardProjeto">
+            <img src="assets/projeto-2.png" alt="Projeto 2">
+
+            <div class="infoProjeto">
+                <h2>Landing Page Lançamento de Livro</h2>
+                <p>
+                    Este projeto foi desenvolvido como freelancer para a Litteris Editora, com o objetivo de criar uma
+                    landing page voltada para o lançamento de um livro. A página foi projetada para divulgar a obra de
+                    forma atrativa, apresentando informações como sinopse, autor e chamadas para ação do lançamento. O
+                    foco principal foi criar uma interface visualmente agradável e eficiente para conversão, alinhada às
+                    necessidades do cliente.
+                </p>
+                <div class="techs">
+                    <span>Next.js</span>
+                    <span>Tailwind CSS</span>
+                    <span>Vercel</span>
+                </div>
+
+            </div>
+        </a>
+
+        <a href="https://www.linkedin.com/posts/marcus-cevolela_automaaexaeto-arduino-programaaexaeto-activity-7423036723275653121-w7Bk?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEbuCPEBmhAER5Um59RdNC58Ovo9aiGPnz0"
+            target="_blank" class="cardProjeto">
+            <img src="assets/projeto-3.png" alt="Projeto 3">
+
+            <div class="infoProjeto">
+                <h2>Janela Automática com Sensor de Chuva</h2>
+                <p>
+                    Este projeto foi desenvolvido durante o ensino médio no curso de Automação Industrial, sendo o
+                    trabalho final da formação. A solução consiste em um sistema automatizado capaz de detectar chuva e
+                    acionar o fechamento de uma janela, utilizando sensores, arduíno e lógica de controle. O projeto
+                    integrou conceitos de eletrônica e automação, demonstrando a aplicação prática dos conhecimentos
+                    adquiridos ao longo do curso.
+                </p>
+
+                <div class="techs">
+                    <span>Arduíno</span>
+                    <span>Eletrônica</span>
+                    <span>Lógica de Programação</span>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://www.linkedin.com/posts/marcus-cevolela_automacao-n8n-desenvolvimento-activity-7428589013164294144-Ti_i?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEbuCPEBmhAER5Um59RdNC58Ovo9aiGPnz0"
+            target="_blank" class="cardProjeto">
+            <img src="assets/projeto-4.png" alt="Projeto 4">
+
+            <div class="infoProjeto">
+                <h2>Automação para Processo de Entrevistas</h2>
+                <p>
+                    Este projeto foi desenvolvido como uma das minhas primeiras experiências utilizando a ferramenta
+                    n8n. O objetivo foi automatizar parte do processo de entrevistas, facilitando a organização e o
+                    gerenciamento das informações dos candidatos. A solução foi criada para otimizar tarefas
+                    repetitivas, melhorar a eficiência do processo e explorar o uso de automações no fluxo de trabalho.
+                </p>
+
+                <div class="techs">
+                    <span>n8n</span>
+                    <span>JavaScript</span>
+                    <span>Automação</span>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="containerBotao">
+        <a href="sobreMim.html" class="botao">
+            Veja meu <strong>currículo</strong> aqui!
+        </a>
+        <a href="contato.html" class="botao">
+            Entre em <strong>contato</strong> comigo aqui!
+        </a>
+    </div>
+</body>
+
+</html>
